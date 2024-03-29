@@ -1,4 +1,4 @@
-@Library('jenkins-shared') _
+//@Library('jenkins-shared') _
 
 pipeline{
 
@@ -20,5 +20,5 @@ pipeline{
               // }
             //}
         //}       
-    //}
-//}
+    }
+}
