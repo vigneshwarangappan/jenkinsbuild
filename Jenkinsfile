@@ -8,8 +8,6 @@ pipeline{
         stage('Git Checkout'){
             steps{
                 git branch: 'main', url: 'https://github.com/vigneshwarangappan/jenkinsbuild.git'
-                sh { git clone https://github.com/vigneshwarangappan/jenkinsbuild.git}
-            
             }
         }
         stage('Shared Library Reference'){
