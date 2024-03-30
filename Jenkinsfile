@@ -4,10 +4,14 @@ pipeline{
 
     agent any
     stages{
-         
+
+
         stage('Git Checkout'){
             steps{
-                git branch: 'main', url: 'https://github.com/vigneshwarangappan/jenkinsbuild.git'
+            gitCheckout(
+                branch: "main",
+                url: "https://github.com/vigneshwarangappan/jenkinsbuild.git"
+            )
             }
         }
         stage('Shared Library Reference'){
