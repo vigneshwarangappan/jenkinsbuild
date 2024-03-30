@@ -12,9 +12,14 @@ pipeline{
         }
         stage('Shared Library Reference'){
             steps{
-            dockerBuild()
+            dockerBuild() 
             }
         }
+        stage('Docker Run'){
+            steps{
+                sh 'docker run javaapp:latest'
+            }
+        }        
 //        stage('Docker Image Build'){
   //          steps{
     //           script{             
