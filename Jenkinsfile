@@ -7,10 +7,8 @@ pipeline{
          
         stage('Git Checkout'){
             steps{
-            gitCheckout(
-                branch: "main",
-                url: "https://github.com/vigneshwarangappan/jenkinsbuild.git"
-            )
+               git branch: "main" url: "https://github.com/vigneshwarangappan/jenkinsbuild.git"
+            
             }
         }
         stage('Shared Library Reference'){
