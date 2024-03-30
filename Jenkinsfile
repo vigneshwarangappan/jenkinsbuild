@@ -13,6 +13,11 @@ pipeline{
             )
             }
         }
+        stage('Shared Library Reference'){
+            steps{
+            dockerBuild()
+            }
+        }
 //        stage('Docker Image Build'){
   //          steps{
     //           script{             
