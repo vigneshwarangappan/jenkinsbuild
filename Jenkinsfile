@@ -11,7 +11,9 @@ pipeline {
         }
     stage('Shared Library Reference'){
             steps{
-            dockerBuild() 
+              sh 'sudo apt update'
+              sh    'sudo apt install docker.io '
+              dockerBuild() 
             }
         }
         stage('Docker Run'){
