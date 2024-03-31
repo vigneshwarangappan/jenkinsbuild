@@ -1,7 +1,7 @@
 @Library('jenkins_shared') _
 pipeline {
   agent {
-    docker { image 'jenkins/jenkins:lts-jdk17' }
+    docker { image 'node:16-alpine' }
   }
   stages {
     stage('Git Checkout'){
