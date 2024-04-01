@@ -2,7 +2,7 @@
 
 pipeline{
 
-    agent any
+    agent {docker {ubuntu:latest}}
     stages{
 
         stage('Git Checkout'){
