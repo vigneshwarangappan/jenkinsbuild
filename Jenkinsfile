@@ -13,7 +13,6 @@ pipeline{
         stage('Shared Library Reference'){
             steps{
             dockerBuild() 
-            sh 'docker image build -t javaapp:latest .'
             }
         }
         stage('Docker Run'){
